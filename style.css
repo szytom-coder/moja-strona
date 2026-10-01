@@ -1,12 +1,27 @@
 body {margin:0;} 
 article, section, aside{
     padding: 20px;
+    color: black;
+}
+h1{
+    margin: 0;
+    padding: 15px;
 }
 nav{
+gap: 20px;
+display: flex;
+justify-content: center;
+text-align: center;
 height: 50px;
 background-color: rgb(82, 228, 228);
 }
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
 header{
+text-align: center;
 height: auto;
 background-color: rgb(86, 177, 177);
 }
@@ -14,7 +29,7 @@ main{
     display: flex;
 min-height: auto;
 background-color: rgb(51, 119, 119);
-flex-direction: row;
+flex-direction: column;
 gap: 10px;
 }
 section{
@@ -28,13 +43,18 @@ background-color: rgb(54, 165, 165);
 flex: 1;
 }
 article{
+img {max-width: 400px;}
 height: auto;
 background-color: rgb(40, 128, 128);
 flex: 3;
 }
 footer{
+    padding: 10px;
 height: auto;
 background-color:rgb(42, 117, 117);
+}
+footer p{
+    margin: 0;
 }
 @media (max-width:700px) {
 main {
